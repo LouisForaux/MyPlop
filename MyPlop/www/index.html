@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="fwk/css/framework7.material.min.css">
+        <title>Bienvenue !</title>
+    </head>
+    <body class="theme-orange">
+        <!-- <div class="app">
+            <h1>MyPlop</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connexion</p>
+                <p class="event received">Bienvenue sur MyPlop !</p>
+            </div>
+            <h1>Ouverture de l'application prochaînement !</h1>
+        </div> -->
+
+
+        <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <div class="content-block-title">Plopsaland De Panne</div>
+    <div class="list-block">
+      <ul>
+        <a href="#" class="item-link">
+  <div class="item-content">
+    <div class="item-media">Attraction</div>
+    <div class="item-inner">Liste</div>
+  </div>
+</a>     
+        <li class="item-content">
+          <div class="item-media"><i class="icon icon-f7"></i></div>
+          <div class="item-inner">
+            <div class="item-title">Item with badge</div>
+            <div class="item-after"><span class="badge">5</span></div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media"><i class="icon icon-f7"></i></div>
+          <div class="item-inner">
+            <div class="item-title">Another item</div>
+            <div class="item-after">Another label</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="content-block-title">Plopsaqua</div>
+    <div class="list-block">
+      <ul>
+        <li class="item-content">
+          <div class="item-media"><i class="icon icon-f7"></i></div>
+          <div class="item-inner">
+            <div class="item-title">Item title</div>
+            <div class="item-after">Label</div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media"><i class="icon icon-f7"></i></div>
+          <div class="item-inner">
+            <div class="item-title">Item with badge</div>
+            <div class="item-after"><span class="badge">5</span></div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media"><i class="icon icon-f7"></i></div>
+          <div class="item-inner">
+            <div class="item-title">Another item</div>
+            <div class="item-after">Another label</div>
+          </div>
+        </li>
+      </ul>
+      </div>
+    </div>
+    </div>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding">MyPlop</div>
+            <div class="right">
+              <!-- 
+                Right link contains only icon - additional "icon-only" class
+                Additional "open-panel" class tells app to open panel when we click on this link
+              -->
+              <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <p>Page content goes here</p>
+              <!-- Link to another page -->
+              <a href="about.html">About app</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="fwk/js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            var myApp = new Framework7({
+    swipePanel: 'left'
+});
+        </script>
+    </body>
+</html>
